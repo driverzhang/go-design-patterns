@@ -1,4 +1,5 @@
-package creational
+package factory_method
+
 
 import (
 	"strings"

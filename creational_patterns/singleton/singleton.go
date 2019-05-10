@@ -2,6 +2,7 @@ package singleton
 
 import "sync"
 
+// 私有内部类 结构体
 type singleton struct {
 	count int
 }
@@ -27,6 +28,7 @@ func (s *singleton) GetCount() int {
 	return s.count
 }
 
+/**************************** 知识扩展分解线 ********************************/
 // 懒汉模式-并发-耗资源版
 var mutx sync.Mutex
 
